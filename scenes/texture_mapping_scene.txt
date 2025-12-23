@@ -1,0 +1,14 @@
+imsize 512 512
+eye 2 -6 1
+viewdir -1 3 -0.5
+updir 0 0 1
+vfov 45
+bkgcolor 0.2 0.4 0.4 1
+light 0 1 -1 0 1
+mtlcolor 0 0 0 1 1 1 0.2 0.2 0.2 20 1 1
+texture bump.ppm
+sphere -1 -1 -1 0.5
+texture bump.ppm
+sphere 2 2 2 0.75
+texture normalmap.ppm
+sphere -4 2 2 0.75
