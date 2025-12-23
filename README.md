@@ -29,7 +29,7 @@ Material types:
 Different material types, including reflective, transparent, solid, smooth shading, and flat shading. 
 
 To run the program, use the following command:
-		Make ./raytracer.c
+		Make ./raytracer 
 		./rayracer input.txt
 
 
