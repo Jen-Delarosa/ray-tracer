@@ -13,6 +13,7 @@ The program parses input files to render the scene and image files to perform te
  
 Object creation and geometry:
 Defines and manages objects used to create the scene, such as spheres, triangles, and vectors.
+
 Shadow detection:
 The program handles multiple objects by detecting shadows to determine which object appears closer to the camera first.
 
