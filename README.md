@@ -36,5 +36,7 @@ To run the program, use the following command:
 ## Directory structure: 
 
 The images/ folder contains PPM images produced by the ray tracer.
+
 The src/ folder contains the source code and Makefile.
+
 The scenes/ folder contains different input files that produce the images in the images folder. 
