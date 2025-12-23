@@ -17,10 +17,10 @@ Defines and manages objects used to create the scene, such as spheres, triangles
 Shadow detection:
 The program handles multiple objects by detecting shadows to determine which object appears closer to the camera first.
 
-Lighting (Phong Illumination Model):
+Lighting:
 Used the Phong Illumination Model to calculate the diffuse, specular, and ambient terms, and determined the lighting of the scene.
 
-Reflectance(Schlick’s Approximation):
+Reflectance:
 Schlick's approximation is used to reflect rays off the object’s surfaces to determine which objects the ray hits and are reflected onto the current object in the scene.
 
 Transparency: 
