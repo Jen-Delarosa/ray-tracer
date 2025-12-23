@@ -1,12 +1,12 @@
 # ray-tracer
 
-## Project Overview:
+# Project Overview:
 	
 Implemented a Ray tracer program in C that recursively casts rays into a 3D scene to determine the color stored for each pixel. The program outputs a PPM image that displays the scene the user created. The program creates a scene from an input file that specifies the objects, materials, and lighting. 
 
 The ray tracer supports input files containing multiple objects, multiple light sources, and different material properties, including texture mapping, smooth shading, flat shading, reflectance, and transparency. 
 
-# Main Features: 
+## Main Features: 
 
 File handling and scene parsing: 
 The program parses input files to render the scene and image files to perform texture mapping. The program also writes to a PPM file, storing the RGB values for each pixel in the scene.
@@ -33,7 +33,7 @@ To run the program, use the following command:
 		./rayracer input.txt
 
 
-Directory structure: 
+## Directory structure: 
 
 The images/ folder contains PPM images produced by the ray tracer.
 The src/ folder contains the source code and Makefile.
