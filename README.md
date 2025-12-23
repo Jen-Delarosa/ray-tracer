@@ -28,9 +28,9 @@ Handles transparency by casting refracted rays through objects and blending the 
 Material types: 
 Different material types, including reflective, transparent, solid, smooth shading, and flat shading. 
 
-To run the program, use the following command:
-		Make ./raytracer 
-		./rayracer input.txt
+To run the program, use the following commands:
+		1. Make ./raytracer 
+		2. ./raytracer input.txt
 
 
 ## Directory structure: 
