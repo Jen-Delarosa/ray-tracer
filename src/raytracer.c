@@ -694,7 +694,7 @@ ColorType shade_ray(SphereType spheres[MAX_SPHERES],RayType ray,SphereType spher
 
 
 ColorType Trace_ray(RayType ray, SphereType spheres[MAX_SPHERES], MtlType color_list[10],
-     ColorType back, LightType light[10], int light_count, TriangleType traingles[10], 
+     ColorType back, LightType light[10], int light_count, TriangleType triangles[10], 
      VertexType vertices[20], VertexType verticesN[20], TexturePic textureFiles[20], TextureCoordType coords[20], int depth){
     // Returns color of object ray hits, if doesnt hit anything will return background color
     
@@ -762,9 +762,9 @@ ColorType Trace_ray(RayType ray, SphereType spheres[MAX_SPHERES], MtlType color_
     }
     float smaller_t = INFINITY; 
     for(int i =0; i < MAX_TRIANGLES;  i++){
-       VertexType p0 = vertices[traingles[i].v[0]]; //v1
-       VertexType p1 = vertices[traingles[i].v[1]]; //v2
-       VertexType p2 = vertices[traingles[i].v[2]]; //v3
+       VertexType p0 = vertices[triangles[i].v[0]]; //v1
+       VertexType p1 = vertices[triangles[i].v[1]]; //v2
+       VertexType p2 = vertices[triangles[i].v[2]]; //v3
        VectorType e1; 
        e1.x = p1.x - p0.x;
        e1.y = p1.y - p0.y;
@@ -819,7 +819,7 @@ ColorType Trace_ray(RayType ray, SphereType spheres[MAX_SPHERES], MtlType color_
         if(alpha >= 0 && beta >= 0 && gamma >= 0 && alpha < 1 && beta <1 && gamma < 1){
             if(smaller_t < smallest_t){
                 smallest_t = smaller_t;
-                phony = traingles[i];
+                phony = triangles[i];
             }
         }
        }
@@ -836,13 +836,13 @@ ColorType Trace_ray(RayType ray, SphereType spheres[MAX_SPHERES], MtlType color_
         phony.c = -1;
         // If closest sphere hits a sphere we get a real index, not -1
         // In case we dont hit a sphere but triangle hit.c will still be -1
-        return shade_ray(spheres, ray, hit, intersection_p, color_list, light, light_count, traingles,phony,vertices,verticesN,textureFiles,coords,depth+1, back_color); // Get color form color list
+        return shade_ray(spheres, ray, hit, intersection_p, color_list, light, light_count, triangles,phony,vertices,verticesN,textureFiles,coords,depth+1, back_color); // Get color form color list
     }
     if(phony.c != -1){
        
         hit.c =-1;
         // If we hit a sphere and not triangle phony will sitll be -1
-        return shade_ray(spheres, ray,hit,intersection_p,color_list,light,light_count,traingles,phony, vertices,verticesN,textureFiles,coords,depth+1,back_color);
+        return shade_ray(spheres, ray,hit,intersection_p,color_list,light,light_count,triangles,phony, vertices,verticesN,textureFiles,coords,depth+1,back_color);
     }
    
     return back_color; 
