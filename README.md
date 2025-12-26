@@ -1,6 +1,6 @@
 # ray-tracer
 
-# Project Overview:
+## Project Overview:
 	
 Implemented a Ray tracer program in C that recursively casts rays into a 3D scene to determine the color stored for each pixel. The program outputs a PPM image that displays the scene the user created. The program creates a scene from an input file that specifies the objects, materials, and lighting. 
 
