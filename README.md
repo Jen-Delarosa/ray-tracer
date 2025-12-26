@@ -36,11 +36,11 @@ To run the program, use the following commands:
 
 ## Directory structure: 
 
-The images/ folder contains images converted to PNG from the PPM files produced by the ray tracer.
+- The images/ folder contains images converted to PNG from the PPM files produced by the ray tracer.
 
-The src/ folder contains the source code, Makefile, and an example input file (input.txt).
+- The src/ folder contains the source code, Makefile, and an example input file (input.txt).
 
-The scenes/ folder contains different input files that produce the images in the images/ folder. 
+- The scenes/ folder contains different input files that produce the images in the images/ folder. 
 
-The scenes/output/ folder contains the original PPM files produced by the ray tracer.
+- The scenes/output/ folder contains the original PPM files produced by the ray tracer.
 
