@@ -26,9 +26,6 @@ Schlick's approximation is used to reflect rays off the object’s surfaces to d
 - Transparency: 
 Handles transparency by casting refracted rays through objects and blending the transmitted color with the surface color, so that objects behind transparent objects are still visible.
 
-- Material types: 
-Different material types, including reflective, transparent, solid, smooth shading, and flat shading. 
-
 To run the program, use the following commands:
 		1. Make ./raytracer 
 		2. ./raytracer input.txt
